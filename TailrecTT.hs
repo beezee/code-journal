@@ -11,7 +11,6 @@ cata (Leaf x) [] acc = (acc ++ [x])
 cata TNil (d:defer) acc = cata d defer acc
 cata TNil [] acc = acc
 
-
 run = (Branch 42
   (Branch 7
     (Branch 8 (Leaf 17) (Leaf 9))
