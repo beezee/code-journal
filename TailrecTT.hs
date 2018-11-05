@@ -14,16 +14,8 @@ cata TNil [] acc = acc
 
 run = (Branch 42
   (Branch 7
-    (Branch 8
-      (Leaf 17)
-      (Leaf 9))
-    (Branch 9
-      (Leaf 11)
-      TNil))
+    (Branch 8 (Leaf 17) (Leaf 9))
+    (Branch 9 (Leaf 11) TNil))
   (Branch 3
-    (Branch 5
-      (Leaf 7)
-      (Leaf 8))
-    (Branch 10
-      (Leaf 11)
-      TNil)))
+    (Branch 5 (Leaf 7) (Leaf 8))
+    (Branch 10 (Leaf 11) TNil)))
